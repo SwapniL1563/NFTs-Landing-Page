@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    color: rgb(231, 231, 231);
+}
+
+body{
+    background-color: rgb(5, 5, 5);
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;   
+}
+
+.nav-logo h1{
+    font-size: 1.1rem;
+    color: rgb(238, 238, 238);
+}
+
+.nav-logo span{
+    color: #F36B4D;
+}
+
+.nav-links{
+    cursor: pointer;
+    color: rgb(231, 231, 231);
+    display: flex;
+    list-style: none;
+    gap: 2.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li{
+    font-size: 1.05rem;
+}
+
+.nav-btn{
+    background-color:rgb(231, 231, 231);;
+    cursor: pointer;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 0.85rem;
+    border: none;
+    color: black;
+}
+
+.hero{
+    padding: 35px 40px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-content {
+    color: rgb(231, 231, 231);
+    font-size: 0.85rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw ;
+    gap: 20px;
+}
+
+.hero-content p {
+    font-size: 0.9rem;
+    width: 80%;
+}
+
+.hero-profile{
+    display: flex;
+    align-items: center;
+}
+
+.hero-profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1{
+    background-image: url('/assets/cartoon-man-wearing-glasses.jpg');
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(5, 5, 5);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    z-index: 4;
+}
+
+.circle2{
+    background-image: url('/assets/cartoon-woman-wearing-vr-glasses.jpg');
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(5, 5, 5);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-10px);
+    z-index: 3;
+}
+
+.circle3{
+    background-image: url('/assets/cartoon-woman-wearing-glasses.jpg');
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(5, 5, 5);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-20px);
+    z-index: 2;
+}
+
+.hero-profile-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-profile-text h1{
+    font-size: 1.2rem;
+    color: rgb(231, 231, 231);
+}
+
+.hero-profile-text p{
+    font-size: 0.85rem;
+    color: rgb(231, 231, 231);
+}
+
+.hero-title {
+    font-size: 2.55rem;
+    color: rgb(231, 231, 231);
+    letter-spacing: 0.12rem;
+    width: 20%;
+}
+
+.hero-title span{
+    color: #F36B4D;
+}
+
+.hero-spinner{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-spinner img{
+    filter: opacity(0.9);
+    width: 200px;
+    animation: spin 7s infinite linear 0.5s;
+}
+
+
+.slider-img{
+   padding: 5px 0px; 
+   display: flex;
+   gap: 20px;
+   animation: slide1 2s ease-in-out both ;
+}
+
+.slider-img img{
+    filter: opacity(0.65);
+    width:230px;
+    border-radius: 5px;
+}
+
+.slider-img img:hover{
+    transform: scale(1.05);
+    filter: opacity(0.9);
+}
+
+.slider-img1{
+    padding: 10px 5px; 
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    animation: slide 2s ease-in-out both ;
+ }
+ 
+ .slider-img1 img{
+     filter: opacity(0.65);
+     width:230px;
+     border-radius: 5px;
+ }
+ 
+ .slider-img1 img:hover{
+     transform: scale(1.05);
+     filter: opacity(0.9);
+ }
+
+ .circle-cursor {
+    z-index: 10;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F36B4D;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  .circle-cursor1 {
+    z-index: 10;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F36B4D;
+    pointer-events: none;
+    opacity: 0.2;
+    filter: blur(10px);
+  }
+
+ @keyframes slide {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-5%);
+    }
+ }
+
+ @keyframes slide1 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(5%);
+    }
+ }
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav-links li{
+        display: none;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .hero-content{
+        width: 80%;
+    }
+
+    .hero-title{
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .hero-spinner{
+        display: none;
+    }
+
+    .slider-img img{
+        width: 150px;
+    }
+
+    .slider-img1 img{
+        width: 150px;
+    }
+}
+
+
+
+
