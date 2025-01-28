@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,16 @@
     color: rgb(231, 231, 231);
 }
 
+html{
+    overflow-x: hidden;
+    height:100vh;
+}
 body{
+    width: 100vw;
     background-color: rgb(5, 5, 5);
     overflow-x: hidden;
 }
+
 
 .navbar{
     background-color: rgb(5, 5, 5);
@@ -203,7 +209,7 @@ body{
 
  .circle-cursor {
     z-index: 10;
-    position: fixed;
+    position: absolute;
     top: -50%;
     left: -50%;
     transform: translate(-50%, -50%);
@@ -217,7 +223,7 @@ body{
 
   .circle-cursor1 {
     z-index: 10;
-    position: fixed;
+    position: absolute;
     top: -50%;
     left: -50%;
     transform: translate(-50%, -50%);
@@ -258,11 +264,22 @@ body{
 }
 
 @media screen and (max-width:600px) {
+    
     .nav-links li{
         display: none;
     }
 
+    #circleId{
+        display: none;
+    }
+
+    #circleId1{
+        display: none;
+    }
+
+
     .hero{
+        /* height: 600px; */
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -282,13 +299,25 @@ body{
         display: none;
     }
 
+    .slider{
+        overflow: hidden;
+    }
+
+    .slider1{
+        overflow: hidden;
+    }
+
     .slider-img img{
+        /* display: none; */
         width: 150px;
     }
 
     .slider-img1 img{
+        /* display: none; */
         width: 150px;
     }
+
+    
 }
 
 
