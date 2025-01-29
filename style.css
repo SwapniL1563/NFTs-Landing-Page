@@ -38,7 +38,6 @@ body{
 
 .nav-links{
     cursor: pointer;
-    color: rgb(231, 231, 231);
     display: flex;
     list-style: none;
     gap: 2.5vw;
@@ -47,8 +46,15 @@ body{
 }
 
 .nav-links li{
+    color: rgb(202, 202, 202);
     font-size: 1.05rem;
 }
+
+.nav-links li:hover{
+    color: rgb(255, 255, 255);
+}
+
+
 
 .nav-btn{
     background-color:rgb(231, 231, 231);;
@@ -202,12 +208,13 @@ body{
      border-radius: 5px;
  }
  
- .slider-img1 img:hover{
+ .slider-img1 img:hover {
      transform: scale(1.05);
      filter: opacity(0.9);
  }
 
- .circle-cursor {
+
+ #circleId {
     z-index: 10;
     position: absolute;
     top: -50%;
@@ -221,7 +228,8 @@ body{
     opacity: 0.7;
   }
 
-  .circle-cursor1 {
+  #circleId1 {
+    
     z-index: 10;
     position: absolute;
     top: -50%;
